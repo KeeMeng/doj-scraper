@@ -54,12 +54,6 @@ def main():
 		text = re.sub("[^\\S \n]", "", text)
 		text = re.sub(" +", " ", text)
 		text = re.sub("\u200b", "", text)
-		# text = re.sub("\u2010|\u2013", "-", text)
-		# text = re.sub("\u2018|\u2019", "'", text)
-		# text = re.sub("\uff0e", "\.", text)
-		# text = re.sub("\u00b7", "·", text)
-		# text = re.sub("\u2026", "…", text)
-		# text = re.sub("\u201c|\u201d", "\\\"", text)
 
 		en_paragraphs = text.split("\n")
 		en_paragraphs = [en_paragraph.strip() for en_paragraph in en_paragraphs if en_paragraph.strip() != ""]
@@ -84,34 +78,48 @@ def main():
 		date = link[0:-9]
 		iso_date = f"{date[0:4]}-{date[4:6]}-{date[6:8]}"
 
+		# split to sentences
 		en_sentences = []
 		zh_sentences = []
 		enzh_sentences = []
+		other_sentences = []
 		[[en_sentences.append(en_sentence.strip()) for en_sentence in en_paragraph.split(". ") if en_sentence.strip() != ""] for en_paragraph in en_paragraphs]
 		for zh_paragraph in zh_paragraphs:
 			for zh_sentence in zh_paragraph.split("\u3002"):
-				if zh_sentence.strip() == "」" or zh_sentence.strip() == "）":
+				if zh_sentence.strip() == "」" or zh_sentence.strip() == "）" or zh_sentence.strip() == "』" or zh_sentence.strip() == "……」":
 					zh_sentences[-1] += zh_sentence.strip()
 				elif zh_sentence.strip() != "":
 					zh_sentences.append(zh_sentence.strip())
 
-		for sentence in en_sentences:
+		# remove enzh from en
+		count = 0
+		while count < len(en_sentences):
+			sentence = en_sentences[count]
 			try:
-				if len(re.findall("[\u4e00-\u9fff]", sentence)) / len(re.findall("([\u4e00-\u9fff])|(0-9)+|([a-zA-Z]+)", sentence)) in range(0.2, 0.8):
+				if len(re.findall("[\u4e00-\u9fff]", sentence)) / len(re.findall("([\u4e00-\u9fff])|([a-zA-Z]+)", sentence)) > 0.05 and len(re.findall("[\u4e00-\u9fff]", sentence)) > 2:
 					en_sentences.remove(sentence)
+					count -= 1
 					enzh_sentences.append(sentence)
 			except ZeroDivisionError:
 				en_sentences.remove(sentence)
-				enzh_sentences.append(sentence)
+				count -= 1
+				other_sentences.append(sentence)
+			count += 1
 
-		for sentence in zh_sentences:
+		# remove enzh from zh
+		count = 0
+		while count < len(zh_sentences):
+			sentence = zh_sentences[count]
 			try:
-				if len(re.findall("[a-zA-Z]+", sentence)) / len(re.findall("([\u4e00-\u9fff])|(0-9)+|([a-zA-Z]+)", sentence)) in range(0.2, 0.8):
+				if len(re.findall("[a-zA-Z]+", sentence)) / len(re.findall("([\u4e00-\u9fff])|([a-zA-Z]+)", sentence)) > 0.05 and len(re.findall("[a-zA-Z]+", sentence)) > 2:
 					zh_sentences.remove(sentence)
+					count -= 1
 					enzh_sentences.append(sentence)
 			except ZeroDivisionError:
 				zh_sentences.remove(sentence)
-				enzh_sentences.append(sentence)
+				count -= 1
+				other_sentences.append(sentence)
+			count += 1
 
 		data = {
 			"en_url": en_link,
@@ -129,6 +137,7 @@ def main():
 				"en": en_sentences,
 				"zh": zh_sentences,
 				"enzh": enzh_sentences,
+				"others": other_sentences
 			}
 		}
 
