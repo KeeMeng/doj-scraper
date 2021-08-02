@@ -8,55 +8,26 @@ from bs4 import BeautifulSoup
 from argparse import ArgumentParser
 
 def scrape(link):
-	# r = str(requests.post(link).content.decode('ISO-8859-1').encode('utf-8'))
-	# r = requests.post(link).content.decode('ISO-8859-1')
 	r = requests.post(link).content.decode('utf-8')
-	# print(type(r))
-	# print(r.encoding)
-	# r.encoding = 'utf-8'
-	# print(r.encoding)
-	# r = str(r.content.decode('ISO-8859-1').encode('utf-8'))
-	# print(type(r))
+
 	r = re.sub("[\r\t\f\v\n]", "", r)
 	r = re.sub("<[ /]*br[ /]*>", "\n", r)
 	r = re.sub(" +", " ", r)
 	r = re.sub("\u200b|\u3000", "", r)
-	# print(repr(r))
-	# print(re.findall("<!--(.*?)-->", r))
 	r = re.sub("<!--([\w\W]*?)-->", "", r)
-	# print(type(r))
-	# print(repr(r))
-	# print("==========================")
-
-	# r = requests.post(link).content
-	# r = bytes(r, 'utf-8')
-	r = r.encode("utf-8")
-	# print(type(r))
-	page = BeautifulSoup(r, "html.parser")
-	# print(page)
-	# exit()
-	# page = BeautifulSoup(str(requests.post(link).content).replace("</br>", "<br/>"), "html.parser")
-	# page = BeautifulSoup(requests.post(link).content, "html.parser")
-	# print(repr(page))
-	# print("==========================")
+	
+	page = BeautifulSoup(r.encode("utf-8"), "html.parser")
+	
 	try:
 		title = page.find_all("h2")[0].get_text()
 		if "(english only)" in title.lower() or "（只有中文）" in title:
 			return (None, None)
 		elif title == "The request could not be satisfied.":
+			# Usually when the server is busy
 			print("!!! The request could not be satisfied: " + link)
 			time.sleep(5)
 			return scrape(link)
 
-		# print(page)
-		# print("===============================")
-		# for br in page.find_all("br"):
-		# 	print(br)
-		# 	print("br")
-		# 	# if not str(br).startswith("<br>"):
-		# 	br.replace_with("<br>")
-		# print(page)
-		# print("===============================")
 		text = ""
 		p_count = 0
 		# If all the content is in div and/or p
@@ -64,49 +35,27 @@ def scrape(link):
 			paras = page.find("div", {"class": "pressContent"}).find_all("p")
 			for e in page.find("div", {"class": "pressContent"}):
 				if not e.name and e.strip() and "" "************** content" not in e.strip():
-					# print(repr(e.strip()))
 					text += e.strip() + "\n"
 				elif e.name == "p":
 					text += e.get_text() + "\n"
-					# text += paras[p_count].get_text() + "\n"
-					# p_count += 1
 		# If all the content is not in div but some are in p
 		except AttributeError:
 			try:
 				print("AttributeError")
-				# paras = page.find("body").find_all("p")
-				# print(paras)
 				for e in page.find("body"):
-					# print("------------------")
-					# print(e.name)
-					# print(e)
 					if not e.name and e.strip() and "" "************** content" not in e.strip():
-						# print("add")
-						# print(repr(e.strip()))
 						text += e.strip() + "\n"
 					elif e.name == "p":
-						# print(paras[p_count].get_text())
-						# print(e.get_text())
-						# print("add2")
-						# text += paras[p_count].get_text() + "\n"
 						text += e.get_text() + "\n"
-						# p_count += 1
-			# If all the content is not in div or a p
+			# If all the content is not in div or a p (Very unlikely)
 			except TypeError:
 				print("TypeError")
-				# paras = page.find("body").find_all("p")
 				for e in page.find("body"):
 					if not e.name and e.strip() and "" "************** content" not in e.strip():
 						text += e.strip() + "\n"
-						# print(repr(e.strip()))
-					# elif e.name == "p":
-					# 	text += paras[p_count].get_text() + "\n"
-					# 	p_count += 1
 
 	except IndexError:
 		return (None, None)
-	# print("~~~~~~~~~~~~~~~~~~~~~~~~")
-	# print(text)
 	paragraphs = text.split("\n")
 	return ([paragraph.strip() for paragraph in paragraphs if paragraph.strip() != ""], title)
 
@@ -140,7 +89,6 @@ def main():
 				if int(link[:8]) >= int(args_date):
 					links.append(link)
 	
-	# links = [""]
 	for link in links:
 		print(link)
 		en_link = "https://www.doj.gov.hk/en/community_engagement/press/" + link
@@ -148,7 +96,6 @@ def main():
 
 		(en_paragraphs, en_title) = scrape(en_link)
 		(zh_paragraphs, zh_title) = scrape(zh_link)
-		# exit()
 		if not en_paragraphs or not zh_paragraphs:
 			print("!!! 2 languages not avaliable: " + link)
 			continue
