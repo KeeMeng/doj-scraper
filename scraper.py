@@ -7,6 +7,7 @@ import datetime
 from bs4 import BeautifulSoup
 from argparse import ArgumentParser
 
+
 def scrape(link):
 	r = requests.post(link).content.decode('utf-8')
 
@@ -15,21 +16,20 @@ def scrape(link):
 	r = re.sub(" +", " ", r)
 	r = re.sub("\u200b|\u3000", "", r)
 	r = re.sub("<!--([\w\W]*?)-->", "", r)
-	
+
 	page = BeautifulSoup(r.encode("utf-8"), "html.parser")
-	
+
 	try:
 		title = page.find_all("h2")[0].get_text()
 		if "(english only)" in title.lower() or "（只有中文）" in title:
 			return (None, None)
 		elif title == "The request could not be satisfied.":
 			# Usually when the server is busy
-			print("!!! The request could not be satisfied: " + link)
+			print("!!! Server busy, retrying in 5 seconds: " + link)
 			time.sleep(5)
 			return scrape(link)
 
 		text = ""
-		p_count = 0
 		# If all the content is in div and/or p
 		try:
 			paras = page.find("div", {"class": "pressContent"}).find_all("p")
@@ -41,7 +41,6 @@ def scrape(link):
 		# If all the content is not in div but some are in p
 		except AttributeError:
 			try:
-				print("AttributeError")
 				for e in page.find("body"):
 					if not e.name and e.strip() and "" "************** content" not in e.strip():
 						text += e.strip() + "\n"
@@ -49,7 +48,6 @@ def scrape(link):
 						text += e.get_text() + "\n"
 			# If all the content is not in div or a p (Very unlikely)
 			except TypeError:
-				print("TypeError")
 				for e in page.find("body"):
 					if not e.name and e.strip() and "" "************** content" not in e.strip():
 						text += e.strip() + "\n"
@@ -66,7 +64,6 @@ def main():
 	args = parser.parse_args()
 	args_date = args.date.replace("-", "")
 
-	# folder for json
 	if not os.path.exists("output"):
 		os.makedirs("output")
 
@@ -79,7 +76,7 @@ def main():
 			if int(link[:8]) >= int(args_date):
 				links.append(link)
 
-	# Archive
+	# Archive (2012-2020)
 	start_year = max(2012, int(args_date[:4]))
 	for year in range(start_year, datetime.datetime.now().year):
 		page = BeautifulSoup(requests.post(f"https://www.doj.gov.hk/en/archive/press_{year}.html").text, "html.parser")
@@ -88,7 +85,7 @@ def main():
 				link = re.search("\/(\\d\\d\\d\\d\\d\\d\\d\\d_pr\\d\.html)", press_release.get("href")).group(1)
 				if int(link[:8]) >= int(args_date):
 					links.append(link)
-	
+
 	for link in links:
 		print(link)
 		en_link = "https://www.doj.gov.hk/en/community_engagement/press/" + link
@@ -99,7 +96,7 @@ def main():
 		if not en_paragraphs or not zh_paragraphs:
 			print("!!! 2 languages not avaliable: " + link)
 			continue
-		
+
 		date = link[0:-9]
 		iso_date = f"{date[0:4]}-{date[4:6]}-{date[6:8]}"
 
@@ -118,11 +115,14 @@ def main():
 		while count < len(en_sentences):
 			sentence = en_sentences[count]
 			try:
-				if len(re.findall("[\u4e00-\u9fff]", sentence)) / len(re.findall("([\u4e00-\u9fff])|([a-zA-Z]+)", sentence)) > 0.05 and len(re.findall("[\u4e00-\u9fff]", sentence)) > 2:
+				zh_words = len(re.findall("[\u4e00-\u9fff]", sentence))
+				all_words = len(re.findall("([\u4e00-\u9fff])|([a-zA-Z]+)", sentence))
+				if zh_words / all_words > 0.05 and zh_words > 2:
 					en_sentences.remove(sentence)
 					count -= 1
 					enzh_sentences.append(sentence)
 			except ZeroDivisionError:
+				# no english or chinese text, eg. numbers
 				en_sentences.remove(sentence)
 				count -= 1
 				other_sentences.append(sentence)
@@ -133,7 +133,9 @@ def main():
 		while count < len(zh_sentences):
 			sentence = zh_sentences[count]
 			try:
-				if len(re.findall("[a-zA-Z]+", sentence)) / len(re.findall("([\u4e00-\u9fff])|([a-zA-Z]+)", sentence)) > 0.05 and len(re.findall("[a-zA-Z]", sentence)) > 2:
+				en_words = len(re.findall("[a-zA-Z]+", sentence))
+				all_words = len(re.findall("([\u4e00-\u9fff])|([a-zA-Z]+)", sentence))
+				if en_words / all_words > 0.05 and en_words > 2:
 					zh_sentences.remove(sentence)
 					count -= 1
 					enzh_sentences.append(sentence)
