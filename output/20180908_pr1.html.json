@@ -1,0 +1,46 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20180908_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20180908_pr1.html",
+    "category": "Press Release",
+    "en_title": "Secretary for Justice to visit Beijing and Korea",
+    "zh_title": "律政司司長訪問北京及韓國",
+    "release_date": "2018-09-08",
+    "para_aligned_status": true,
+    "sentence_aligned_status": true,
+    "contents": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will visit Beijing and Incheon, Korea, from tomorrow (September 9) to September 11.",
+            "In Beijing, Ms Cheng will attend the Tsinghua World Forum on the Rule of Law, where she will deliver a speech and participate in panel discussions.",
+            "Ms Cheng will then fly to Incheon, Korea in the evening on September 9 to attend the United Nations Commission on International Trade Law (UNCITRAL) Inter-sessional Regional Meeting on Investor-State Dispute Settlement (ISDS) Reform. She will speak on third party funding and join the roundtable discussion.",
+            "She will return to Hong Kong in the evening on September 11.",
+            "Ends/Saturday, September 8, 2018"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（九月九日）至九月十一日訪問北京及韓國仁川。",
+            "在北京期間，鄭若驊將出席清華大學世界法治論壇，發表主題演講並參與專題討論。",
+            "鄭若驊九月九日晚上將飛往韓國仁川，出席聯合國國際貿易法委員會投資者與國家爭議解決制度改革的閉會期間區域會議。她將就第三方資助發表演說，並參與圓桌會議。",
+            "鄭若驊九月十一日晚上返抵香港。",
+            "2018年9月8日（星期六）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will visit Beijing and Incheon, Korea, from tomorrow (September 9) to September 11.",
+            "In Beijing, Ms Cheng will attend the Tsinghua World Forum on the Rule of Law, where she will deliver a speech and participate in panel discussions.",
+            "Ms Cheng will then fly to Incheon, Korea in the evening on September 9 to attend the United Nations Commission on International Trade Law (UNCITRAL) Inter-sessional Regional Meeting on Investor-State Dispute Settlement (ISDS) Reform",
+            "She will speak on third party funding and join the roundtable discussion.",
+            "She will return to Hong Kong in the evening on September 11.",
+            "Ends/Saturday, September 8, 2018"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（九月九日）至九月十一日訪問北京及韓國仁川",
+            "在北京期間，鄭若驊將出席清華大學世界法治論壇，發表主題演講並參與專題討論",
+            "鄭若驊九月九日晚上將飛往韓國仁川，出席聯合國國際貿易法委員會投資者與國家爭議解決制度改革的閉會期間區域會議",
+            "她將就第三方資助發表演說，並參與圓桌會議",
+            "鄭若驊九月十一日晚上返抵香港",
+            "2018年9月8日（星期六）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

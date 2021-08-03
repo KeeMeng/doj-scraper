@@ -1,0 +1,42 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20191108_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20191108_pr1.html",
+    "category": "Press Release",
+    "en_title": "SJ to visit Guangzhou and Macao",
+    "zh_title": "律政司司長到訪廣州及澳門",
+    "release_date": "2019-11-08",
+    "para_aligned_status": true,
+    "sentence_aligned_status": false,
+    "contents": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will depart for Guangzhou tomorrow afternoon (November 9) to attend the China Forum on International Legal Cooperation organised by the China Law Society the following day. She will deliver a speech at the plenary session of the Forum.",
+            "Ms Cheng will arrive in Macao in the evening on November 11. She will attend a seminar on external legal affairs in commemoration of the 20th anniversary of the establishment of the Macao Special Administrative Region the following day.",
+            "Ms Cheng will return to Hong Kong on November 12.",
+            "Ends/Friday, November 8, 2019"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（十一月九日）下午前往廣州，出席翌日由中國法學會主辦的中國法治國際論壇，並發表演說。",
+            "鄭若驊十一月十一日晚會抵達澳門，出席翌日舉行的《澳門回歸20周年對外法律事務研討會》。",
+            "鄭若驊將於十一月十二日返港。",
+            "2019年11月8日（星期五）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will depart for Guangzhou tomorrow afternoon (November 9) to attend the China Forum on International Legal Cooperation organised by the China Law Society the following day",
+            "She will deliver a speech at the plenary session of the Forum.",
+            "Ms Cheng will arrive in Macao in the evening on November 11",
+            "She will attend a seminar on external legal affairs in commemoration of the 20th anniversary of the establishment of the Macao Special Administrative Region the following day.",
+            "Ms Cheng will return to Hong Kong on November 12.",
+            "Ends/Friday, November 8, 2019"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（十一月九日）下午前往廣州，出席翌日由中國法學會主辦的中國法治國際論壇，並發表演說",
+            "鄭若驊十一月十一日晚會抵達澳門，出席翌日舉行的《澳門回歸20周年對外法律事務研討會》",
+            "鄭若驊將於十一月十二日返港",
+            "2019年11月8日（星期五）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

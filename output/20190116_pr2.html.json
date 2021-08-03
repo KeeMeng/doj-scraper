@@ -1,0 +1,39 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20190116_pr2.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20190116_pr2.html",
+    "category": "Press Release",
+    "en_title": "Secretary for Justice to visit Beijing",
+    "zh_title": "律政司司長訪問北京",
+    "release_date": "2019-01-16",
+    "para_aligned_status": false,
+    "sentence_aligned_status": true,
+    "contents": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will leave for Beijing tomorrow afternoon (January 17).      Ms Cheng will sign the Arrangement on Reciprocal Recognition and Enforcement of Judgments in Civil and Commercial Matters between the Courts of the Mainland and of the Hong Kong Special Administrative Region with the Supreme People's Court in the morning on January 18. She will also call on the Ministry of Justice as well as the Hong Kong and Macao Affairs Office of the State Council.",
+            "Ms Cheng will return to Hong Kong on January 19.",
+            "Ends/Wednesday, January 16, 2019"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（一月十七日）下午前赴北京。",
+            "鄭若驊一月十八日上午與最高人民法院簽署《關於內地與香港特別行政區法院相互認可和執行民商事案件判決的安排》，她亦會拜訪司法部及國務院港澳事務辦公室。",
+            "鄭若驊一月十九日返回香港。",
+            "2019年1月16日（星期三）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will leave for Beijing tomorrow afternoon (January 17).      Ms Cheng will sign the Arrangement on Reciprocal Recognition and Enforcement of Judgments in Civil and Commercial Matters between the Courts of the Mainland and of the Hong Kong Special Administrative Region with the Supreme People's Court in the morning on January 18",
+            "She will also call on the Ministry of Justice as well as the Hong Kong and Macao Affairs Office of the State Council.",
+            "Ms Cheng will return to Hong Kong on January 19.",
+            "Ends/Wednesday, January 16, 2019"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（一月十七日）下午前赴北京",
+            "鄭若驊一月十八日上午與最高人民法院簽署《關於內地與香港特別行政區法院相互認可和執行民商事案件判決的安排》，她亦會拜訪司法部及國務院港澳事務辦公室",
+            "鄭若驊一月十九日返回香港",
+            "2019年1月16日（星期三）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

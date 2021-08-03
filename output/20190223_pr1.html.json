@@ -1,0 +1,40 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20190223_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20190223_pr1.html",
+    "category": "Press Release",
+    "en_title": "Secretary for Justice to visit Beijing",
+    "zh_title": "律政司司長訪問北京",
+    "release_date": "2019-02-23",
+    "para_aligned_status": true,
+    "sentence_aligned_status": true,
+    "contents": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will leave for Beijing tomorrow (February 24).",
+            "During her stay, Ms Cheng will meet with representatives from the Supreme People's Court and the Ministry of Foreign Affairs to discuss matters relating to dispute resolution services in the Guangdong-Hong Kong-Macao Greater Bay Area and the Belt and Road related regions.",
+            "Ms Cheng will return to Hong Kong on February 26.",
+            "Ends/Saturday, February 23, 2019"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（二月二十四日）前赴北京。",
+            "在北京期間，鄭若驊將分別與最高人民法院及外交部代表會面，商討有關在粵港澳大灣區及「一帶一路」相關地區的爭議解決服務發展事宜。",
+            "鄭若驊二月二十六日返回香港。",
+            "2019年2月23日（星期六）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will leave for Beijing tomorrow (February 24).",
+            "During her stay, Ms Cheng will meet with representatives from the Supreme People's Court and the Ministry of Foreign Affairs to discuss matters relating to dispute resolution services in the Guangdong-Hong Kong-Macao Greater Bay Area and the Belt and Road related regions.",
+            "Ms Cheng will return to Hong Kong on February 26.",
+            "Ends/Saturday, February 23, 2019"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（二月二十四日）前赴北京",
+            "在北京期間，鄭若驊將分別與最高人民法院及外交部代表會面，商討有關在粵港澳大灣區及「一帶一路」相關地區的爭議解決服務發展事宜",
+            "鄭若驊二月二十六日返回香港",
+            "2019年2月23日（星期六）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

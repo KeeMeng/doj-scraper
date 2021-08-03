@@ -1,0 +1,50 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20201128_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20201128_pr1.html",
+    "category": "Press Release",
+    "en_title": "DoJ staff member preliminarily tests positive for COVID-19",
+    "zh_title": "律政司一名職員初步確診2019冠狀病毒病",
+    "release_date": "2020-11-28",
+    "para_aligned_status": true,
+    "sentence_aligned_status": false,
+    "contents": {
+        "en": [
+            "The Department of Justice (DoJ) today (November 28) said a staff member has preliminarily tested positive for COVID-19.",
+            "The staff member concerned worked at the West Kowloon Law Courts Building. She last came to work on November 26 and has no recent travel history. She has been wearing surgical masks while performing her duties and has properly maintained social distancing with people she has had contact with. Her body temperature was normal when undergoing temperature screening during work.",
+            "Thorough cleaning and disinfection for relevant places at the West Kowloon Law Courts Building has been arranged.",
+            "The DoJ is concerned about the COVID-19 epidemic. The department will continue to remind all staff to strictly comply with the hygienic measures for infectious diseases provided by the Centre for Health Protection. The staff will also be reminded to consult a doctor promptly if they have any discomforting symptoms.",
+            "Ends/Saturday, November 28, 2020"
+        ],
+        "zh": [
+            "律政司今日（十一月二十八日）表示，該部門一名職員初步確診2019冠狀病毒病。",
+            "該名職員在西九龍法院大樓工作，最近一次上班日期為十一月二十六日，最近沒有外遊紀錄。她於工作時有佩戴外科口罩，與接觸人士保持適當社交距離，並在工作期間有進行體溫探測，體溫正常。",
+            "西九龍法院大樓相關地方，已安排全面清潔和消毒。",
+            "律政司一直關注2019冠狀病毒病的情況，並提醒所有職員繼續嚴格遵守衞生防護中心發出有關處理傳染病的衞生指引，職員如出現不適症狀，必須馬上求醫。",
+            "2020年11月28日（星期六）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Department of Justice (DoJ) today (November 28) said a staff member has preliminarily tested positive for COVID-19.",
+            "The staff member concerned worked at the West Kowloon Law Courts Building",
+            "She last came to work on November 26 and has no recent travel history",
+            "She has been wearing surgical masks while performing her duties and has properly maintained social distancing with people she has had contact with",
+            "Her body temperature was normal when undergoing temperature screening during work.",
+            "Thorough cleaning and disinfection for relevant places at the West Kowloon Law Courts Building has been arranged.",
+            "The DoJ is concerned about the COVID-19 epidemic",
+            "The department will continue to remind all staff to strictly comply with the hygienic measures for infectious diseases provided by the Centre for Health Protection",
+            "The staff will also be reminded to consult a doctor promptly if they have any discomforting symptoms.",
+            "Ends/Saturday, November 28, 2020"
+        ],
+        "zh": [
+            "律政司今日（十一月二十八日）表示，該部門一名職員初步確診2019冠狀病毒病",
+            "該名職員在西九龍法院大樓工作，最近一次上班日期為十一月二十六日，最近沒有外遊紀錄",
+            "她於工作時有佩戴外科口罩，與接觸人士保持適當社交距離，並在工作期間有進行體溫探測，體溫正常",
+            "西九龍法院大樓相關地方，已安排全面清潔和消毒",
+            "律政司一直關注2019冠狀病毒病的情況，並提醒所有職員繼續嚴格遵守衞生防護中心發出有關處理傳染病的衞生指引，職員如出現不適症狀，必須馬上求醫",
+            "2020年11月28日（星期六）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

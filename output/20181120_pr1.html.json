@@ -1,0 +1,33 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20181120_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20181120_pr1.html",
+    "category": "Press Release",
+    "en_title": "Statement by the Department of Justice",
+    "zh_title": "律政司發表聲明",
+    "release_date": "2018-11-20",
+    "para_aligned_status": true,
+    "sentence_aligned_status": false,
+    "contents": {
+        "en": [
+            "The Department of Justice learned about the death of Senior Government Counsel, Mr Vincent Wong, this morning (November 17). We express profound sadness and will provide all the necessary assistance to his family.",
+            "Ends/Saturday, November 17, 2018"
+        ],
+        "zh": [
+            "律政司今日（十一月十七日）上午得悉高級政府律師王永森的死訊，我們對王先生的離世深感惋惜，並會為其家人提供一切所需的協助。",
+            "2018年11月17日（星期六）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Department of Justice learned about the death of Senior Government Counsel, Mr Vincent Wong, this morning (November 17)",
+            "We express profound sadness and will provide all the necessary assistance to his family.",
+            "Ends/Saturday, November 17, 2018"
+        ],
+        "zh": [
+            "律政司今日（十一月十七日）上午得悉高級政府律師王永森的死訊，我們對王先生的離世深感惋惜，並會為其家人提供一切所需的協助",
+            "2018年11月17日（星期六）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

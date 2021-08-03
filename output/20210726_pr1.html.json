@@ -1,0 +1,38 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20210726_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20210726_pr1.html",
+    "category": "Press Release",
+    "en_title": "SJ to visit Beijing",
+    "zh_title": "律政司司長訪問北京",
+    "release_date": "2021-07-26",
+    "para_aligned_status": true,
+    "sentence_aligned_status": true,
+    "contents": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will visit Beijing from tomorrow (July 27) to July 30.",
+            "While in Beijing, Ms Cheng will meet with officials from various ministries and authorities. She will also sign a number of co-operation arrangements in order to enhance training and exchanges between the Mainland and Hong Kong in the areas of legal, dispute resolution and deal-making services.",
+            "Ms Cheng will travel to Beijing from Shenzhen tomorrow and will return to Hong Kong via Shenzhen on July 31.Ends/Monday, July 26, 2021"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（七月二十七日）至七月三十日訪問北京。",
+            "在北京期間，鄭若驊將會與不同部委和機關的官員會面，亦會簽署合作文件，加強內地與香港就法律、爭議解決和促成交易方面的培訓和交流。",
+            "鄭若驊明日由深圳前往北京，並於七月三十一日由北京經深圳返港。2021年7月26日（星期一）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will visit Beijing from tomorrow (July 27) to July 30.",
+            "While in Beijing, Ms Cheng will meet with officials from various ministries and authorities",
+            "She will also sign a number of co-operation arrangements in order to enhance training and exchanges between the Mainland and Hong Kong in the areas of legal, dispute resolution and deal-making services.",
+            "Ms Cheng will travel to Beijing from Shenzhen tomorrow and will return to Hong Kong via Shenzhen on July 31.Ends/Monday, July 26, 2021"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（七月二十七日）至七月三十日訪問北京",
+            "在北京期間，鄭若驊將會與不同部委和機關的官員會面，亦會簽署合作文件，加強內地與香港就法律、爭議解決和促成交易方面的培訓和交流",
+            "鄭若驊明日由深圳前往北京，並於七月三十一日由北京經深圳返港",
+            "2021年7月26日（星期一）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

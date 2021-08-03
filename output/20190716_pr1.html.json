@@ -1,0 +1,42 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20190716_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20190716_pr1.html",
+    "category": "Press Release",
+    "en_title": "Secretary for Justice to visit Beijing",
+    "zh_title": "律政司司長訪問北京",
+    "release_date": "2019-07-16",
+    "para_aligned_status": true,
+    "sentence_aligned_status": true,
+    "contents": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will leave for Beijing tomorrow afternoon (July 17).",
+            "During her stay, Ms Cheng will meet with representatives from the Ministry of Justice, the Ministry of Foreign Affairs, the Supreme People's Court and visit the Beijing Internet Court. She will also attend the second Belt and Road Joint Conference.",
+            "Ms Cheng will return to Hong Kong on the morning of July 20.",
+            "Ends/Tuesday, July 16, 2019"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（七月十七日）下午前赴北京。",
+            "在北京期間，鄭若驊將與司法部、外交部、最高人民法院代表會面，以及參觀北京互聯網法院。她亦會出席第二次「一帶一路」聯席會議。",
+            "鄭若驊於七月二十日上午返港。",
+            "2019年7月16日（星期二）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Secretary for Justice, Ms Teresa Cheng, SC, will leave for Beijing tomorrow afternoon (July 17).",
+            "During her stay, Ms Cheng will meet with representatives from the Ministry of Justice, the Ministry of Foreign Affairs, the Supreme People's Court and visit the Beijing Internet Court",
+            "She will also attend the second Belt and Road Joint Conference.",
+            "Ms Cheng will return to Hong Kong on the morning of July 20.",
+            "Ends/Tuesday, July 16, 2019"
+        ],
+        "zh": [
+            "律政司司長鄭若驊資深大律師明日（七月十七日）下午前赴北京",
+            "在北京期間，鄭若驊將與司法部、外交部、最高人民法院代表會面，以及參觀北京互聯網法院",
+            "她亦會出席第二次「一帶一路」聯席會議",
+            "鄭若驊於七月二十日上午返港",
+            "2019年7月16日（星期二）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

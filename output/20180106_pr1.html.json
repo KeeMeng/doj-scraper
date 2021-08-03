@@ -1,0 +1,42 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20180106_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20180106_pr1.html",
+    "category": "Press Release",
+    "en_title": "Statement by the Secretary for Justice",
+    "zh_title": "律政司司長發表聲明",
+    "release_date": "2018-01-06",
+    "para_aligned_status": true,
+    "sentence_aligned_status": false,
+    "contents": {
+        "en": [
+            "In response to news reports on suspected unauthorised building works involving the property owned by the Secretary for Justice, Ms Teresa Cheng, SC, the Secretary issued the following statement today (January 6):",
+            "\"I received a notice from the Buildings Department yesterday (January 5), requesting entry to my property for investigation. For this, I immediately commissioned a professional authorised person to conduct an inspection. I have also reported it to the Chief Executive and undertook to rectify the situation as soon as possible if any unauthorised building works are identified.",
+            "I deeply apologise for any inconvenience caused by the incident.\"",
+            "Ends/Satursday, Jan 06, 2018"
+        ],
+        "zh": [
+            "就傳媒報道有關律政司司長鄭若驊資深大律師擁有的物業懷疑有僭建物一事，鄭若驊今日（一月六日）作以下聲明：",
+            "「我昨日（一月五日）收到屋宇署的通知，要求進入我的物業進行調查，就此，我已立即委托專業的認可人士進行檢視，並就是否有懷疑僭建物的問題，立即向特首報告，我會全力配合屋宇署的調查，若證實有僭建物，會盡快改正。",
+            "就事件引起的不便，本人深表歉意。」",
+            "2018年01月06日（星期六）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "In response to news reports on suspected unauthorised building works involving the property owned by the Secretary for Justice, Ms Teresa Cheng, SC, the Secretary issued the following statement today (January 6):",
+            "\"I received a notice from the Buildings Department yesterday (January 5), requesting entry to my property for investigation",
+            "For this, I immediately commissioned a professional authorised person to conduct an inspection",
+            "I have also reported it to the Chief Executive and undertook to rectify the situation as soon as possible if any unauthorised building works are identified.",
+            "I deeply apologise for any inconvenience caused by the incident.\"",
+            "Ends/Satursday, Jan 06, 2018"
+        ],
+        "zh": [
+            "就傳媒報道有關律政司司長鄭若驊資深大律師擁有的物業懷疑有僭建物一事，鄭若驊今日（一月六日）作以下聲明：",
+            "「我昨日（一月五日）收到屋宇署的通知，要求進入我的物業進行調查，就此，我已立即委托專業的認可人士進行檢視，並就是否有懷疑僭建物的問題，立即向特首報告，我會全力配合屋宇署的調查，若證實有僭建物，會盡快改正",
+            "就事件引起的不便，本人深表歉意」",
+            "2018年01月06日（星期六）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

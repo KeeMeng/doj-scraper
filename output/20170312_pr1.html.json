@@ -1,0 +1,42 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20170312_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20170312_pr1.html",
+    "category": "Press Release",
+    "en_title": "HKSAR Government officials to visit Beijing",
+    "zh_title": "特區政府官員訪問北京",
+    "release_date": "2017-03-12",
+    "para_aligned_status": true,
+    "sentence_aligned_status": true,
+    "contents": {
+        "en": [
+            "The Secretary for Justice, Mr Rimsky Yuen, SC, and the Secretary for Transport and Housing, Professor Anthony Cheung Bing-leung will depart for Beijing tomorrow (March 13).",
+            "During the stay in Beijing, they will meet with relevant officials of the Central People's Government to exchange views on matters relating to the Hong Kong Section of the Guangzhou-Shenzhen-Hong Kong Express Rail Link. They will return to Hong Kong on March 14.",
+            "During the absence of Professor Cheung, the Under Secretary for Transport and Housing, Mr Yau Shing-mu, will be the Acting Secretary for Transport and Housing.",
+            "Ends/Sunday, Mar 12, 2017"
+        ],
+        "zh": [
+            "律政司司長袁國強資深大律師和運輸及房屋局局長張炳良教授明日（三月十三日）啟程前往北京。",
+            "在北京期間，他們將與相關中央官員會面，就廣深港高速鐵路香港段相關事宜交換意見。他們將於三月十四日返港。",
+            "張炳良教授離港期間，運輸及房屋局副局長邱誠武將署任運輸及房屋局局長。",
+            "2017年03月12日（星期日）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "The Secretary for Justice, Mr Rimsky Yuen, SC, and the Secretary for Transport and Housing, Professor Anthony Cheung Bing-leung will depart for Beijing tomorrow (March 13).",
+            "During the stay in Beijing, they will meet with relevant officials of the Central People's Government to exchange views on matters relating to the Hong Kong Section of the Guangzhou-Shenzhen-Hong Kong Express Rail Link",
+            "They will return to Hong Kong on March 14.",
+            "During the absence of Professor Cheung, the Under Secretary for Transport and Housing, Mr Yau Shing-mu, will be the Acting Secretary for Transport and Housing.",
+            "Ends/Sunday, Mar 12, 2017"
+        ],
+        "zh": [
+            "律政司司長袁國強資深大律師和運輸及房屋局局長張炳良教授明日（三月十三日）啟程前往北京",
+            "在北京期間，他們將與相關中央官員會面，就廣深港高速鐵路香港段相關事宜交換意見",
+            "他們將於三月十四日返港",
+            "張炳良教授離港期間，運輸及房屋局副局長邱誠武將署任運輸及房屋局局長",
+            "2017年03月12日（星期日）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}

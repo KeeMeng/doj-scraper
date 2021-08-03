@@ -1,0 +1,48 @@
+{
+    "en_url": "https://www.doj.gov.hk/en/community_engagement/press/20200101_pr1.html",
+    "zh_url": "https://www.doj.gov.hk/tc/community_engagement/press/20200101_pr1.html",
+    "category": "Press Release",
+    "en_title": "DoJ responds to criticism against judge",
+    "zh_title": "律政司回應針對法官的批評",
+    "release_date": "2020-01-01",
+    "para_aligned_status": true,
+    "sentence_aligned_status": false,
+    "contents": {
+        "en": [
+            "In response to the vandalism outside the High Court Building and criticism against a judge today (January 1), the Department of Justice issued the following statement:",
+            "Judicial independence is an essential element of the rule of law. The Hong Kong Special Administrative Region Government respects the freedom of speech of individuals. Members of the public have the right to express their views on court decisions and related matters within the boundary permitted by the law. Personal attacks and insults against judges would severely undermine the authority of the courts and damage public confidence in the judicial system.",
+            "As pointed out by the Chief Justice of the Court of Final Appeal at the Ceremonial Opening of the Legal Year last year, \"... it is no part of a court's function or duty to adjudicate on political or social issues, nor economic ones, whether siding with one extreme or another, or finding some sort of middle ground to solve the community's political, social or economic concerns. Rather, at all times, the court is concerned with dealing with one aspect and one aspect only: a resolution of the legal issues arising in the dispute before it.\" Any person who is dissatisfied with court decisions may lodge appeals through the excising mechanism and should not criticise judges abusively or impute them of political bias, otherwise, the rule of law in Hong Kong would be undermined.",
+            "Ends/Wednesday, January 1, 2020"
+        ],
+        "zh": [
+            "對於今日（一月一日）有人在高等法院大樓外塗污並寫上批評一名法官的字句，律政司作出以下聲明：",
+            "司法獨立是法治的一項重要元素。香港特區政府尊重個人的言論自由，社會人士有權在法律容許的範圍內就法院的裁決或相關事項發表意見，但對法官作出人身攻擊及辱罵，會嚴重損害法院的權威及打擊公眾對司法制度的信心。",
+            "正如終審法院首席法官在去年法律年度開啟典禮致辭時指出，「法庭的功能或職責不是裁決政治或社會議題（又或是經濟議題）。法庭不會偏幫任何一方，亦不會尋找某種中間方案來解決社會關注的政治、社會或經濟問題；而實際上，不論何時，法庭處理的只是其席前的糾紛所涉及的法律議題，別無其他。」因此，任何人如不服案件的裁決，應該透過現行制度提出上訴，絕不應該惡言攻擊或詆毀法官政治偏頗，否則只會對香港的法治造成損害。",
+            "2020年1月1日（星期三）"
+        ]
+    },
+    "sentences": {
+        "en": [
+            "In response to the vandalism outside the High Court Building and criticism against a judge today (January 1), the Department of Justice issued the following statement:",
+            "Judicial independence is an essential element of the rule of law",
+            "The Hong Kong Special Administrative Region Government respects the freedom of speech of individuals",
+            "Members of the public have the right to express their views on court decisions and related matters within the boundary permitted by the law",
+            "Personal attacks and insults against judges would severely undermine the authority of the courts and damage public confidence in the judicial system.",
+            "As pointed out by the Chief Justice of the Court of Final Appeal at the Ceremonial Opening of the Legal Year last year, \"..",
+            "it is no part of a court's function or duty to adjudicate on political or social issues, nor economic ones, whether siding with one extreme or another, or finding some sort of middle ground to solve the community's political, social or economic concerns",
+            "Rather, at all times, the court is concerned with dealing with one aspect and one aspect only: a resolution of the legal issues arising in the dispute before it.\" Any person who is dissatisfied with court decisions may lodge appeals through the excising mechanism and should not criticise judges abusively or impute them of political bias, otherwise, the rule of law in Hong Kong would be undermined.",
+            "Ends/Wednesday, January 1, 2020"
+        ],
+        "zh": [
+            "對於今日（一月一日）有人在高等法院大樓外塗污並寫上批評一名法官的字句，律政司作出以下聲明：",
+            "司法獨立是法治的一項重要元素",
+            "香港特區政府尊重個人的言論自由，社會人士有權在法律容許的範圍內就法院的裁決或相關事項發表意見，但對法官作出人身攻擊及辱罵，會嚴重損害法院的權威及打擊公眾對司法制度的信心",
+            "正如終審法院首席法官在去年法律年度開啟典禮致辭時指出，「法庭的功能或職責不是裁決政治或社會議題（又或是經濟議題）",
+            "法庭不會偏幫任何一方，亦不會尋找某種中間方案來解決社會關注的政治、社會或經濟問題；而實際上，不論何時，法庭處理的只是其席前的糾紛所涉及的法律議題，別無其他",
+            "」因此，任何人如不服案件的裁決，應該透過現行制度提出上訴，絕不應該惡言攻擊或詆毀法官政治偏頗，否則只會對香港的法治造成損害",
+            "2020年1月1日（星期三）"
+        ],
+        "enzh": [],
+        "others": []
+    }
+}
