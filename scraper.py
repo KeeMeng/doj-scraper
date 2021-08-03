@@ -33,28 +33,28 @@ def scrape(link):
 		# If all the content is in div and/or p
 		try:
 			for e in page.find("div", {"class": "pressContent"}):
-				if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip not in ["完", "。", ").", "."]:
+				if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip() not in ["完", "。", ").", "."]:
 					text += e.strip() + "\n"
-				elif e.name == "p":
+				elif e.name == "p" and e.get_text() not in ["完", "。", ").", "."]:
 					text += e.get_text() + "\n"
 		# If all the content is not in div but some are in p
-		except AttributeError:
+		except TypeError:
 			try:
 				for e in page.find("body"):
-					if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip not in ["完", "。", ").", "."]:
+					if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip() not in ["完", "。", ").", "."]:
 						text += e.strip() + "\n"
-					elif e.name == "p":
+					elif e.name == "p" and e.get_text() not in ["完", "。", ").", "."]:
 						text += e.get_text() + "\n"
 			# If all the content is not in div or a p (Very unlikely)
 			except TypeError:
 				for e in page.find("body"):
-					if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip not in ["完", "。", ").", "."]:
+					if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip() not in ["完", "。", ").", "."]:
 						text += e.strip() + "\n"
 
 	except IndexError:
 		return (None, None)
 	paragraphs = text.split("\n")
-	return ([paragraph.strip() for paragraph in paragraphs if paragraph.strip() != ""], title)
+	return ([paragraph.strip() for paragraph in paragraphs if paragraph.strip() not in ["完", "。", ").", ".", ""]], title)
 
 
 def main():

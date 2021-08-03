@@ -1,4 +1,5 @@
-output*
+output?
+output??
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
