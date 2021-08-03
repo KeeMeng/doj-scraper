@@ -32,9 +32,8 @@ def scrape(link):
 		text = ""
 		# If all the content is in div and/or p
 		try:
-			paras = page.find("div", {"class": "pressContent"}).find_all("p")
 			for e in page.find("div", {"class": "pressContent"}):
-				if not e.name and e.strip() and "" "************** content" not in e.strip():
+				if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip not in ["完", "。", ").", "."]:
 					text += e.strip() + "\n"
 				elif e.name == "p":
 					text += e.get_text() + "\n"
@@ -42,14 +41,14 @@ def scrape(link):
 		except AttributeError:
 			try:
 				for e in page.find("body"):
-					if not e.name and e.strip() and "" "************** content" not in e.strip():
+					if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip not in ["完", "。", ").", "."]:
 						text += e.strip() + "\n"
 					elif e.name == "p":
 						text += e.get_text() + "\n"
 			# If all the content is not in div or a p (Very unlikely)
 			except TypeError:
 				for e in page.find("body"):
-					if not e.name and e.strip() and "" "************** content" not in e.strip():
+					if not e.name and e.strip() and "" "************** content" not in e.strip() and e.strip not in ["完", "。", ").", "."]:
 						text += e.strip() + "\n"
 
 	except IndexError:
