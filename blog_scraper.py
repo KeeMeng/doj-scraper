@@ -22,7 +22,9 @@ def scrape(link):
 	try:
 		title = page.find_all("h2")[0].get_text()
 		if title == "The request could not be satisfied.":
-			print("!!! Server busy")
+			print("!!! Server busy, retrying in 5 seconds: " + link)
+			time.sleep(5)
+			return scrape(link)
 
 		text = ""
 		# If all the content is in div and/or p
